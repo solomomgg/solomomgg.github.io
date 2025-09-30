@@ -56,35 +56,6 @@ body, html {
   color: #fdd835;
 }
 
-/* Society Section Icons */
-.icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.icon-wrapper {
-  position: relative;
-  width: 150px;
-  height: 150px;
-}
-
-.icon-wrapper .icon {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.5);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.icon-wrapper .icon:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(255,255,255,0.8);
-}
-
 /* Quote */
 .quote {
   font-family: 'Cormorant Garamond', serif;
@@ -111,6 +82,7 @@ body, html {
   line-height: 1.8;
   max-width: 900px;
   margin: 0 auto;
+  color: #0b0f3a;
 }
 
 /* Fellowship Section */
@@ -132,15 +104,6 @@ body, html {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .icons {
-    gap: 1rem;
-  }
-
-  .icon-wrapper {
-    width: 100px;
-    height: 100px;
-  }
-
   .quote {
     font-size: 1.5rem;
     padding: 0.8rem 1.5rem;
