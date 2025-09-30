@@ -1,151 +1,126 @@
+/* General Styles */
 body {
-  margin:0;
-  padding:0;
-  font-family:'Montserrat',sans-serif;
-  text-align:center;
-  line-height:1.6;
-  background:#0b0f3a;
-  color:#fdf6e3;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
-/* Navigation */
-nav#navbar {
-  position:sticky;
-  top:0;
-  background: rgba(11,15,58,0.9);
-  padding:10px 0;
-  z-index:1000;
-}
-nav#navbar ul {
-  display:flex;
-  justify-content:center;
-  list-style:none;
-}
-nav#navbar ul li a {
-  color:#d4af37;
-  text-decoration:none;
-  margin:0 20px;
-  font-weight:500;
-  font-size:1rem;
-}
-
-/* Sections */
 .section {
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  padding:40px 20px;
-  background-size:cover;
-  background-position:center;
-  position:relative;
-  overflow:hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 20px;
 }
 
-/* Content */
 .content {
-  max-width:800px;
-  text-align:center;
+    max-width: 1000px;
 }
 
 /* Fade-in animation */
 .fade-in {
-  opacity:0;
-  transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-.fade-in.visible {
-  opacity:1;
-  transform: translateY(0);
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
 }
 
-/* Quotes */
-.quote {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size:2rem;
-  margin-top:20px;
+@keyframes fadeIn {
+    to { opacity: 1; }
 }
 
-/* Icons */
+/* Navigation */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(11, 15, 58, 0.9);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    margin: 0 20px;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Icons Section */
 .icons {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:40px;
-  margin:40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
+
 .icon-wrapper {
-  position:relative;
-  display:inline-block;
+    position: relative;
 }
+
 .icon {
-  width:120px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
-.icon.glow {
-  filter: drop-shadow(0 0 20px #d4af37);
-}
-.icon:hover {
-  transform: translateY(-10px) rotate(-2deg);
-  filter: drop-shadow(0 0 30px #fdf6e3);
-}
+
+/* Light-ray effect */
 .light-ray {
-  position:absolute;
-  top:50%;
-  left:50%;
-  width:180px;
-  height:180px;
-  transform:translate(-50%,-50%);
-  background: radial-gradient(circle, rgba(212,175,55,0.4) 0%, rgba(212,175,55,0) 70%);
-  border-radius:50%;
-  animation: rotateRay 8s linear infinite, pulseRay 3s ease-in-out infinite;
-  z-index:-1;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 200, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
 }
 
-/* Creed Section */
-#creed h2 {
-  font-family:'Cormorant Garamond',serif;
-  font-size:2.5rem;
-  margin-bottom:20px;
-}
+/* Nicene Creed Section */
 #creed p {
-  font-size:1.2rem;
-  line-height:2rem;
+    line-height: 1.7;
+    font-family: 'Cormorant Garamond', serif;
+    color: #0b0f3a;
 }
 
-/* Discord Button */
+/* Fellowship Section */
 .discord-btn {
-  display:inline-block;
-  background:#7289da;
-  color:#fff;
-  border:none;
-  border-radius:10px;
-  padding:15px 30px;
-  font-size:1.2rem;
-  cursor:pointer;
-  text-decoration:none;
-  animation:pulse 2s infinite;
+    display: inline-block;
+    background-color: #7289da;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
-/* Animations */
-@keyframes rotateRay {
-  from{transform:translate(-50%,-50%) rotate(0deg);}
-  to{transform:translate(-50%,-50%) rotate(360deg);}
-}
-@keyframes pulseRay {
-  0%,100%{opacity:0.4; transform:translate(-50%,-50%) scale(1);}
-  50%{opacity:0.6; transform:translate(-50%,-50%) scale(1.1);}
-}
-@keyframes pulse {
-  0%,100%{transform:scale(1);}
-  50%{transform:scale(1.05);}
+.discord-btn:hover {
+    background-color: #5b6eae;
 }
 
-/* Mobile */
-@media(max-width:768px){
-  .icons{flex-direction:column; gap:20px;}
-  #creed p{font-size:1rem; line-height:1.6rem;}
-  #creed h2{font-size:2rem;}
+/* Backgrounds - now referencing root folder images */
+#faith {
+    background-image: url('thelastsupper.png');
+}
+
+#fellowship {
+    background-image: url('pantocrator-dome.png');
 }
