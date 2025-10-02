@@ -1,4 +1,3 @@
-// Fade-in sections on scroll
 document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.fade-in');
 
@@ -12,4 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.2 });
 
   sections.forEach(section => observer.observe(section));
+
+  // FAQ Accordion
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(q => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      if(answer.style.maxHeight){
+        answer.style.maxHeight = null;
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
 });
