@@ -68,7 +68,7 @@ body {
 
 /* Sections */
 section {
-  padding: 60px 20px; 
+  padding: 60px 20px;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
@@ -76,22 +76,10 @@ section {
 
 /* Home Section */
 .home-section {
-  background-image: url('thelastsupper.png'); /* Repo root image */
+  background-image: url('thelastsupper.jpg'); /* GitHub root image */
   background-size: cover;
   background-position: center;
-  color: white;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-}
-
-.home-text h1 {
-  font-size: 2em;
-  background-color: rgba(139, 94, 60, 0.6);
-  padding: 20px;
-  border-radius: 10px;
 }
 
 /* Content Sections */
@@ -159,10 +147,5 @@ section {
 
   section {
     padding: 50px 15px;
-  }
-
-  .home-text h1 {
-    font-size: 1.5em;
-    padding: 15px;
   }
 }
