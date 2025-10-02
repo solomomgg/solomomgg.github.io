@@ -8,7 +8,7 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f5f0e1; /* Tan background */
+  background-color: #f5f0e1; /* Tan for content sections */
   color: #333;
 }
 
@@ -68,15 +68,15 @@ body {
 
 /* Sections */
 section {
-  padding: 80px 20px 60px 20px;
+  padding: 60px 20px; 
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* Home */
+/* Home Section */
 .home-section {
-  background-image: url('thelastersupper.png'); /* Updated */
+  background-image: url('thelastsupper.png'); /* Repo root image */
   background-size: cover;
   background-position: center;
   color: white;
@@ -95,6 +95,10 @@ section {
 }
 
 /* Content Sections */
+.content-section {
+  background-color: #f5f0e1;
+}
+
 .content-section img {
   max-width: 100%;
   height: auto;
@@ -103,7 +107,7 @@ section {
 }
 
 .content-section h2 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 1.8em;
   color: #5c3a21;
 }
@@ -134,7 +138,7 @@ section {
   background-color: #5b6eae;
 }
 
-/* Fade-in animation */
+/* Fade-in */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -154,7 +158,7 @@ section {
   }
 
   section {
-    padding: 60px 15px 40px 15px;
+    padding: 50px 15px;
   }
 
   .home-text h1 {
