@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+  // Dropdown toggle
+  const dropdownBtn = document.querySelector('.dropdown-btn');
+  const dropdown = document.querySelector('.dropdown-content');
+  dropdownBtn.addEventListener('click', () => {
+    dropdown.classList.toggle('active');
   });
 
   // FAQ accordion
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Fade-in on scroll
+  // Fade-in sections
   const fadeEls = document.querySelectorAll('.fade-in');
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
