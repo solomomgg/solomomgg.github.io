@@ -1,4 +1,4 @@
-// Fade-in on scroll
+// Fade-in on scroll with slight upward movement
 document.addEventListener('DOMContentLoaded', () => {
   const faders = document.querySelectorAll('.fade-in');
 
