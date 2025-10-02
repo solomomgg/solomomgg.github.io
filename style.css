@@ -8,6 +8,7 @@
 body, html {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
+  background-color: #f5e6d3; /* tan church background */
 }
 
 /* Navbar */
@@ -69,19 +70,21 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 100px 20px;
-  min-height: 100vh;
+  padding: 40px 20px; /* reduced padding */
+  min-height: auto;
 }
 
+/* Home Section */
 .home-section {
   background: url('thelastsupper.png') center/cover no-repeat;
   position: relative;
+  min-height: 100vh;
 }
 
 .home-text h1 {
   color: black;
   font-size: 2em;
-  background: rgba(255,255,255,0.7);
+  background: rgba(245,230,211,0.7); /* overlay to blend with background */
   padding: 10px 20px;
   border-radius: 5px;
 }
@@ -91,6 +94,7 @@ section {
   max-width: 90%;
   height: auto;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 /* Creed text formatting */
@@ -100,7 +104,7 @@ section {
 }
 
 .creed-text p {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   line-height: 1.6;
 }
 
@@ -113,6 +117,7 @@ section {
   text-decoration: none;
   border-radius: 5px;
   font-size: 18px;
+  margin-top: 15px;
 }
 
 .discord-btn:hover {
@@ -152,7 +157,7 @@ section {
   }
 
   section {
-    padding: 80px 10px;
+    padding: 30px 10px; /* even tighter for mobile */
   }
 
   .discord-btn {
