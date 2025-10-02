@@ -1,120 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lux Christi</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanctus Lux Christi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+        <a href="#home">Home</a>
+        <a href="#pantocrator">Pantocrator</a>
+        <a href="#mission">Our Mission</a>
+        <a href="#faq">FAQ</a>
+        <a href="#creed">Creed</a>
+        <a href="#contact">Contact</a>
+        <a href="#discord">Discord</a>
+      </div>
+    </div>
+  </nav>
 
-<!-- Navigation -->
-<nav id="navbar">
-  <div class="nav-container">
-    <button class="dropdown-btn">Menu &#9662;</button>
-    <ul class="dropdown-content">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#creed">Nicene Creed</a></li>
-      <li><a href="#mission">Mission</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#discord">Discord</a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- Home Section -->
+  <section id="home" class="home-section fade-in-page">
+    <div class="home-text">
+      <h1>I am the way, the truth, and the life</h1>
+    </div>
+  </section>
 
-<!-- Home Section -->
-<section id="home" class="section fade-in" style="background-image: url('images/thelastsupper.png');">
-  <div class="content">
-    <h1>Welcome to Lux Christi</h1>
-    <p class="quote">"I am the way, the truth, and the life."</p>
-  </div>
-</section>
+  <!-- Pantocrator Section -->
+  <section id="pantocrator" class="pantocrator-section fade-in">
+    <img src="pantocrator-dome.png" alt="Pantocrator">
+  </section>
 
-<!-- Nicene Creed Section -->
-<section id="creed" class="section fade-in" style="background-color:#fdf6e3; color:#0b0f3a;">
-  <div class="content">
-    <h2>Nicene Creed</h2>
-    <p>
-      We believe in one God, the Father Almighty, Maker of heaven and earth, and of all things visible and invisible.<br><br>
-      And in one Lord Jesus Christ, the only-begotten Son of God, begotten of the Father before all worlds; Light of Light, very God of very God; begotten, not made, being of one substance with the Father, by whom all things were made.<br><br>
-      Who, for us men and for our salvation, came down from heaven, and was incarnate by the Holy Spirit of the virgin Mary, and was made man; and was crucified also for us under Pontius Pilate; He suffered and was buried; and the third day He rose again, according to the Scriptures; and ascended into heaven, and sits on the right hand of the Father; and He shall come again, with glory, to judge the quick and the dead; whose kingdom shall have no end.<br><br>
-      And we believe in the Holy Spirit, the Lord and Giver of Life, who proceeds from the Father <strong>and the Son</strong>, who with the Father and the Son together is worshiped and glorified; who spoke by the prophets.<br><br>
-      And we believe one holy catholic and apostolic Church. We acknowledge one baptism for the remission of sins. We look for the resurrection of the dead, and the life of the world to come. Amen.
-    </p>
-    <p class="note">We recognize the importance of this Creed both in the Catholic and Orthodox traditions. While our profession includes the Filioque, we affirm and honor the Orthodox Church’s ancient witness as well.</p>
-  </div>
-</section>
-
-<!-- Mission Section -->
-<section id="mission" class="section fade-in" style="background-color:#0b0f3a;">
-  <div class="content">
+  <!-- Our Mission Section -->
+  <section id="mission" class="fade-in">
     <h2>Our Mission</h2>
-    <p class="mission-text">To glorify the teachings of Christ from age to age, sharing His light, truth, and love with all generations.</p>
-  </div>
-</section>
+    <p>To glorify Christ in all things for all time.</p>
+  </section>
 
-<!-- FAQ Section -->
-<section id="faq" class="section fade-in" style="background-color:#fdf6e3; color:#0b0f3a;">
-  <div class="content">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <button class="faq-question">What does “Lux Christi” mean?</button>
-      <div class="faq-answer">It is Latin for “Light of Christ.” We believe the light of Christ shines into every corner of the world, guiding us to truth and salvation.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Are you a church, denomination, or parish?</button>
-      <div class="faq-answer">No. We are a Christian fellowship centered on the Nicene Creed and the teachings of Jesus Christ.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Which Christian tradition do you follow?</button>
-      <div class="faq-answer">We affirm the universality of the Gospel. Our Creed includes the Filioque as professed in Catholic Christianity, but we also affirm the truth and faith of Orthodox Christianity and honor its witness.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Can non-Catholics or non-Orthodox join?</button>
-      <div class="faq-answer">Yes. Our focus is on the universal faith of Jesus Christ, not denominational boundaries. All who seek the light of Christ are welcome.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">How can I join?</button>
-      <div class="faq-answer">You can participate by reading, praying with us, and connecting with our fellowship on <a href="https://discord.gg/BvcpNasqWs" target="_blank">Discord</a>. Fellowship begins with faith, community, and shared prayer.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Do you require formal membership?</button>
-      <div class="faq-answer">No. Participation is open. Fellowship here is about unity in faith and truth, not paperwork or obligations.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Do you provide sacraments?</button>
-      <div class="faq-answer">No. Sacraments belong to the life of the Church. We are a fellowship for prayer, teaching, and faith-sharing.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">What Bible translation do you recommend?</button>
-      <div class="faq-answer">We encourage the use of faithful Catholic and Orthodox translations such as the RSV-2CE, NRSV-CE, or Orthodox Study Bible.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">How do I contact you with prayer requests?</button>
-      <div class="faq-answer">You can send prayer requests through email at <a href="mailto:support@lux-christi.org">support@lux-christi.org</a>. Solomon Thazar will reach out to you soon.</div>
-    </div>
-  </div>
-</section>
+  <!-- FAQ Section -->
+  <section id="faq" class="fade-in">
+    <h2>FAQ</h2>
+    <p><strong>Who we are:</strong> Sanctus Lux Christi is a Christian fellowship devoted to glorifying Christ in all things.</p>
+    <p><strong>Our mission:</strong> To proclaim Christ through teaching, fellowship, and worship.</p>
+    <p><strong>Theology:</strong> We affirm the Filioque in the Nicene Creed while supporting the witness of Orthodox tradition.</p>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section fade-in" style="background-color:#fdf6e3; color:#0b0f3a;">
-  <div class="content">
+  <!-- Creed Section -->
+  <section id="creed" class="fade-in">
+    <h2>Creeds</h2>
+    <p><strong>Apostles' Creed:</strong></p>
+    <p>I believe in God, the Father almighty, creator of heaven and earth, and in Jesus Christ, His only Son, our Lord…</p>
+    <p><strong>Nicene Creed:</strong></p>
+    <p>We believe in one God, the Father Almighty, maker of heaven and earth, of all things visible and invisible…</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
     <h2>Contact</h2>
-    <p>Email us at: <a href="mailto:support@lux-christi.org">support@lux-christi.org</a></p>
-    <p>Solomon Thazar will reach out to you soon.</p>
-  </div>
-</section>
+    <p>Email: <a href="mailto:support@lux-christi.org">support@lux-christi.org</a></p>
+    <p>Solomon Thazar will be in touch soon.</p>
+  </section>
 
-<!-- Discord Section -->
-<section id="discord" class="section fade-in" style="background-color:#0b0f3a;">
-  <div class="content">
-    <h2>Join Our Fellowship</h2>
-    <a href="https://discord.gg/BvcpNasqWs" target="_blank" class="discord-btn">Join Discord</a>
-  </div>
-</section>
+  <!-- Discord Section -->
+  <section id="discord" class="fade-in">
+    <h2>Join Our Discord</h2>
+    <a href="https://discord.gg/BvcpNasqWs" class="discord-btn" target="_blank">Sanctus Lux Christi Discord</a>
+  </section>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
